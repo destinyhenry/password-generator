@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title> Password Generator</title>
+
+<!-- stylesheet and javascript -->
+<link rel="stylesheet" href="/Users/Destiny/Desktop/random-password/random-password.css">
+<script> src ="/Users/Destiny/Desktop/random-password/random-password.js" </script>
+<script> var password = document.getElementById("password") 
+var password=document.getElementById("password");
+
+function genPassword() {
+   var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   var passwordLength = 8;
+   var password = "";
+for (var i = 0; i <= passwordLength; i++) {
+  var randomNumber = Math.floor(Math.random() * chars.length);
+  password += chars.substring(randomNumber, randomNumber +1);
+ }
+       document.getElementById("password").value = password;
+}
+</script>
+</head>
+<body>
+   <!-- box -->
+<div class="box">
+<div>
+   <!-- title -->
+    <h2> Password Generator </h2>
+    <h4>Generate Your Password Here</h4>
+
+    <!-- Button -->
+ <input type="text" name="" placeholder="Your Secure Password" id="password" readonly>
+ <table>
+    <th><div id="button" class="btn1" onclick="genPassword()"> Generate </div></th>
+ </table>
+</div>
+</body>
+</html>
+
+
+
