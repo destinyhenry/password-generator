@@ -1,46 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title> Password Generator</title>
-
-<!-- stylesheet and javascript -->
-<link rel="stylesheet" href="random-password.css">
-<script> src ="/Users/Destiny/Desktop/random-password/random-password.js" </script>
-<script> var password = document.getElementById("password") 
-var password=document.getElementById("password");
-
-function genPassword() {
-   var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-   var passwordLength = 8;
-   var password = "";
-for (var i = 0; i <= passwordLength; i++) {
-  var randomNumber = Math.floor(Math.random() * chars.length);
-  password += chars.substring(randomNumber, randomNumber +1);
- }
-       document.getElementById("password").value = password;
-}
-</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="random-password.css">
 </head>
 <body>
-   <!-- box -->
-<div class="box">
-<div>
-   <!-- title -->
-    <h2> Password Generator </h2>
-    <h4>Generate Your Password Here</h4>
+    <div id="container">
+        <h1 class= "title">Random Password Generator</h1>
+        <h3 class= "pw-display" id= "pwDisplay" >Your Password appears here!</h3>
 
-    <!-- Button -->
- <input type="text" name="" placeholder="Your Secure Password" id="password" readonly>
- <table>
-    <th><div id="button" class="btn1" onclick="genPassword()"> Generate </div></th>
- </table>
-</div>
+        <form id= "passwordGenerator" class="form">
+            <label for= "">Number of Characters</label>
+            <div class= "length-container">
+                    <input type="range" min="8" max="128" value="16" id= "pwLengthNumber">
+                    <input class= "number-input" type="number" min="8" max="128" value="16" id= "pwLengthRange">
+            </div>
+            <label for="includeLowercase">Include Lowercase?</label>
+            <input type="checkbox" id="includeLowercase">
+
+            <label for="includeUppercase">Include Uppercase?</label>
+            <input type="checkbox" id="includeUppercase">
+
+            <label for="includeNumbers">Include Numbers?</label>
+            <input type="checkbox" id="includeNumbers">
+
+            <label for="includeSpecial">Include Special Characters?</label>
+            <input type="checkbox" id="includeSpecial">
+
+            <button class= "makeButton" type= "submit"> Generate my password!</button>
+        </form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="random-password.js">
+
+    </script>
 </body>
-</html>
 
 
 
