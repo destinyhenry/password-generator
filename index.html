@@ -16,27 +16,27 @@
 <body>
     <div id="container">
         <h1 class= "title">Random Password Generator</h1>
-        <h3 class= "pw-display" id= "pwDisplay" >Your Password appears here!</h3>
+        <h3 class= "pass-display" id= "passDisplay" >Your Password appears here!</h3>
 
-        <form id= "passwordGenerator" class="form">
+        <form id= "generatorForm" class="form">
             <label for= "">Number of Characters</label>
             <div class= "length-container">
-                    <input type="range" min="8" max="128" value="16" id= "pwLengthNumber">
-                    <input class= "number-input" type="number" min="8" max="128" value="16" id= "pwLengthRange">
+                    <input type="range" min="8" max="128" value="16" id= "passLength">
+                    <input class= "number-input" type="number" min="8" max="128" value="16" id= "passLengthRange">
             </div>
-            <label for="includeLowercase">Would you like lowercase letters included?</label>
-            <input type="checkbox" id="includeLowercase">
+            <label for="includeLowercaseLetter">Would you like lowercase letters included?</label>
+            <input type="checkbox" id="includeLowercaseLetter">
 
             <label for="includeUppercase">Would you like uppercase letters included?</label>
-            <input type="checkbox" id="includeUppercase">
+            <input type="checkbox" id="includeUppercaseLetter">
 
             <label for="includeNumbers">Would you like numbers included?</label>
             <input type="checkbox" id="includeNumbers">
 
-            <label for="includeSpecial">Would you like special characters included?</label>
-            <input type="checkbox" id="includeSpecial">
+            <label for="includeSpecialChar">Would you like special characters included?</label>
+            <input type="checkbox" id="includeSpecialChar">
 
-            <button class= "makeButton" type= "submit"> Press for your new password!</button>
+            <button class= "genButton" type= "submit"> Press for your new password!</button>
         </form>
     </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
