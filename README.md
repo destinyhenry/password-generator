@@ -8,6 +8,6 @@ Please see the link to my deployed application below as well as a screenshot of 
 
 https://destinyhenry.github.io/password-generator/
 
-<img width="782" alt="Screen Shot 2022-06-21 at 7 09 42 AM" src="https://user-images.githubusercontent.com/103467936/174785943-8583f573-96cd-418e-a36f-0db7df5c8d3a.png">
+<img width="1276" alt="Screen Shot 2022-07-11 at 8 40 11 PM" src="https://user-images.githubusercontent.com/103467936/178383533-0a7355eb-39ad-41da-b6fa-94f970f95fb3.png">
 
 
