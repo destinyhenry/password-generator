@@ -53,5 +53,28 @@ function passOptions() {
           alert("Please use whole numbers.")
           return generatePassword()
         }
-    }
+    
+    var passwordCharacter = passOptions()
+    var newPassword = []
+    for (i = 0; i < passLength; i++) {
+           var randomCharacter = passwordCharacter[Math.floor(Math.random() * passwordCharacter.length)]
+           newPassword = newPassword.concat(randomCharacter)
+           password = newPassword.join('')
+         }
+        
+        return password
+        }
+      
+      // generate element
+      var generateBtn = document.querySelector("#generate");
+      
+      // password output
+      function displayPassword() {
+        var password = generatePassword();
+        var passwordOutput = document.querySelector("#password");
+      
+        passwordOutput.value = password;
+      
+      }
+    
     
