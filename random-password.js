@@ -8,4 +8,10 @@ function passOptions() {
       var allLowerCase = "abcdefghijklmnopqrstuvwxyz".split("")
       charList = charList.concat(allLowerCase)
       }
+      //include uppercase characters?
+    var includeUppercase = confirm("Include uppercase?")
+    if (includeUppercase === true) {
+      var allUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
+      charList = charList.concat(allUpperCase)
+      }
     }
