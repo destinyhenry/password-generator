@@ -31,4 +31,7 @@ function passOptions() {
         alert("Select at least one character type. Try again!!")
         return generatePassword()
       }
+      return charList;
+    
     }
+    
