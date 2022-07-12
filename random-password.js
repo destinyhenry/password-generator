@@ -76,5 +76,6 @@ function passOptions() {
         passwordOutput.value = password;
       
       }
-    
+     // Activate generate button 
+  generateBtn.addEventListener("click", displayPassword);
     
