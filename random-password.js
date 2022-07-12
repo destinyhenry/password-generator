@@ -14,4 +14,11 @@ function passOptions() {
       var allUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
       charList = charList.concat(allUpperCase)
       }
+
+      //include numbers?
+    var includeNumbers = confirm("Include numbers?")
+    if (includeNumbers === true) {
+      var allNumbers = "1234567890".split("")
+      charList = charList.concat(allNumbers)
+      } 
     }
