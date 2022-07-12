@@ -10,4 +10,6 @@ https://destinyhenry.github.io/password-generator/
 
 <img width="1276" alt="Screen Shot 2022-07-11 at 8 40 11 PM" src="https://user-images.githubusercontent.com/103467936/178383533-0a7355eb-39ad-41da-b6fa-94f970f95fb3.png">
 
+*Please note that this is also mobile user friendly.*
+
 
