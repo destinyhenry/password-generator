@@ -34,4 +34,24 @@ function passOptions() {
       return charList;
     
     }
+    function generatePassword() {
+  
+        // pop up prompt inquiring about password length 
+        var passLength = prompt("Choose the length of your password", "Any number between 8 ~ 128")
+        if (passLength <= 7) {
+          alert("Too short!!")
+          return generatePassword()
+        }
+        if (passLength >= 129) {
+          alert("I'm sorry that password is too long.")
+          return generatePassword()
+        }
+        if (passLength === null) {
+          return;
+        }
+        if (passLength % 1 !== 0) {
+          alert("Please use whole numbers.")
+          return generatePassword()
+        }
+    }
     
