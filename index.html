@@ -2,44 +2,34 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Password Generator</title>
-    <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="random-password.css">
     <style>
         #grad1 {
-          height: 200px;
           background-color: rgb(255, 219, 255); /* For browsers that do not support gradients */
           background-image: linear-gradient(to bottom right, purple, pink);
         }
         </style>
 </head>
-<body>
-    <div id="container">
-        <h1 class= "title">Random Password Generator</h1>
-        <h3 class= "pass-display" id= "passDisplay" >Your Password appears here!</h3>
-
-        <form id= "generatorForm" class="form">
-            <label for= "">Number of Characters</label>
-            <div class= "length-container">
-                    <input type="range" min="8" max="128" value="16" id= "passLength">
-                    <input class= "number-input" type="number" min="8" max="128" value="16" id= "passLengthRange">
+    <body>
+        <div id="title">
+          <header>
+            <h1>Random Password Generator</h1>
+          </header>
+            <div id="card-body">
+              <textarea
+                readonly
+                id="password"
+                placeholder="Your Secure Password"
+                aria-label="Generated Password"
+              ></textarea>
             </div>
-            <label for="includeLowercaseLetter">Would you like lowercase letters included?</label>
-            <input type="checkbox" id="includeLowercaseLetter">
-
-            <label for="includeUppercase">Would you like uppercase letters included?</label>
-            <input type="checkbox" id="includeUppercaseLetter">
-
-            <label for="includeNumbers">Would you like numbers included?</label>
-            <input type="checkbox" id="includeNumbers">
-
-            <label for="includeSpecialChar">Would you like special characters included?</label>
-            <input type="checkbox" id="includeSpecialChar">
-
-            <button class= "genButton" type= "submit"> Press for your new password!</button>
-        </form>
-    </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <div class="card-footer">
+              <button id="generate" class="btn">Generate Password</button>
+            </div>
+          </div>
+        </div>
+        <script src="script.js"></script>
+      </body>
     <script src="random-password.js">
 
     </script>
