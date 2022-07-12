@@ -21,4 +21,10 @@ function passOptions() {
       var allNumbers = "1234567890".split("")
       charList = charList.concat(allNumbers)
       } 
+    //include special characters?
+    var includeSpecialChar = confirm("Include special characters?")
+    if (includeSpecialChar === true) {
+    var allSpecial = "!$%&'()*+,-./:;<=>?@[\]^_`{|}~ ".split("")
+     charList = charList.concat(allSpecial, '"')
+    }
     }
