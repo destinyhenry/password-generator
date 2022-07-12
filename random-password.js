@@ -27,4 +27,8 @@ function passOptions() {
     var allSpecial = "!$%&'()*+,-./:;<=>?@[\]^_`{|}~ ".split("")
      charList = charList.concat(allSpecial, '"')
     }
+    if (charList.length === 0) {
+        alert("Select at least one character type. Try again!!")
+        return generatePassword()
+      }
     }
